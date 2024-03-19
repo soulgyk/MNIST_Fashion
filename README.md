@@ -45,16 +45,16 @@ Activate the myenv environment
 
 ## Usage
 
-- Send a POST request to `http://localhost:8000/predict/` with image data in the request body.
+- Send a POST request to `http://localhost:80/docs/` with image data in the request body.(swagger used for testing)
 - Example request body:
     ```json
-    {"images": [[0, 0, 255, ...], [255, 0, 0, ...], ...]}
+    {"pixels": [[0, 0, 255, ..., 255, 0, 0, ...]]}
     ```
 
 ## Additional Notes
 
-- Ensure that Docker is running and accessible on your system.
-- Modify the model initialization and preprocessing according to your requirements.
+- Ensure that Docker is running and accessible on the system.
+- Modify the model initialization and preprocessing according to the requirements.
 
 
 The input for testing is given below:
